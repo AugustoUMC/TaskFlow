@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - TaskFlow</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Cadastro</h2>
+
+    <p class="subtitle">
+        Crie sua conta no TaskFlow
+    </p>
+
+    <input type="text"
+           id="name"
+           placeholder="Nome">
+
+    <input type="email"
+           id="email"
+           placeholder="Email">
+
+    <div class="password-box">
+
+        <input type="password"
+               id="password"
+               placeholder="Senha">
+
+        <span onclick="togglePassword('password')"
+              class="eye">
+            👁
+        </span>
+
+    </div>
+
+    <div class="password-box">
+
+        <input type="password"
+               id="confirmPassword"
+               placeholder="Confirmar senha">
+
+        <span onclick="togglePassword('confirmPassword')"
+              class="eye">
+            👁
+        </span>
+
+    </div>
+
+    <button onclick="register()">
+        Cadastrar
+    </button>
+
+    <p class="login-link">
+
+        Já possui conta?
+
+        <a href="login.html">
+            Entrar
+        </a>
+
+    </p>
+
+    <p id="msg"></p>
+
+</div>
+
+<script src="../js/cadastro.js"></script>
+
+</body>
+</html>

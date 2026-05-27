@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Tarefa</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="tasks-page">
+
+<div class="navbar-system">
+    <h2 class="logo-system">TaskFlow</h2>
+
+    <div class="nav-links">
+        <button onclick="window.location.href='tasks.html'">Tarefas</button>
+        <button onclick="window.location.href='nova.html'">Nova Tarefa</button>
+        <button onclick="window.location.href='perfil.html'">Perfil</button>
+        <button onclick="logout()" class="logout-btn">Sair</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2>Nova Tarefa</h2>
+
+    <p class="subtitle">
+        Crie uma nova tarefa
+    </p>
+
+    <input type="text"
+           id="title"
+           placeholder="Título">
+
+    <textarea
+            id="description"
+            placeholder="Descrição"></textarea>
+
+    <select id="priority">
+        <option value="ALTA">Alta</option>
+        <option value="MEDIA">Média</option>
+        <option value="BAIXA">Baixa</option>
+    </select>
+
+    <input type="date"
+           id="dueDate">
+
+    <button onclick="createTask()">
+        Salvar tarefa
+    </button>
+
+    <p id="msg"></p>
+
+</div>
+
+<script src="../js/nova.js"></script>
+
+</body>
+</html>
